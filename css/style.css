@@ -1,0 +1,124 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+/* COMMON */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.row {
+    width: 100%;
+    border: 1px solid blue;
+}
+
+
+/* PRODUCT */
+.product {
+    display: inline-block;
+    width: calc(100%/3 - 10px);
+    margin: 5px;
+    border: 1px solid green;
+    vertical-align: top;
+}
+
+.product-image {
+    position: relative;
+    cursor: pointer;
+}
+
+.product-image img {
+    width: 100%;
+}
+
+.brand,
+.discount-price,
+.original-price {
+    font-size: .8em;
+}
+
+.brand {
+    color: grey;
+}
+
+.discount-price {
+    color: red;
+}
+
+.original-price {
+    color: grey;
+    text-decoration: line-through;
+}
+
+.heart {
+    position: absolute;
+    right: 0;
+    top: 5%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    background-color: white;
+}
+
+.labels-wrapper {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+}
+
+.label {
+    color: white;
+    padding: 2px;
+}
+
+.promo {
+    background-color: green;
+}
+
+.discount {
+    background-color: red;
+}
+
+/* Immagine di default */
+.image-default {
+    display: block;
+}
+
+.image-hover {
+    display: none;
+}
+
+/* Immagine all'hover */
+.product-image:hover .image-default {
+    display: none;
+}
+
+.product-image:hover .image-hover {
+    display: block;
+}
+
+.heart {
+    cursor: pointer;
+}
+
+.heart:hover {
+    color: red
+}
+
+
+
+
+
+
+
